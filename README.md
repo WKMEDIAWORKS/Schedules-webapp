@@ -1,0 +1,1 @@
+A simple and mobile-friendly task management app built with vanilla JavaScript, HTML, and CSS. This app allows users to add, view, and remove tasks, while saving their progress using localStorage. It also displays the current date at the top of the page and provides a clean interface with a forest green and white color palette.
