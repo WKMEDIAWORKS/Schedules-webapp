@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #2C3E50;
+    line-height: 1.5;
+}
+
+@viewport {
+    width: device-width;
+    initial-scale: 1.0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#date-container {
+    font-size: 18px;
+    color: forestgreen;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 2px solid forestgreen;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#list-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.heading {
+    font-size: 24px;
+    color: forestgreen;
+    margin-bottom: 10px;
+}
+
+#native-list-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-element {
+    background-color: #ECF0F1;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#add-items-cont {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.input-box {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    max-width: 200px;
+    box-sizing: border-box;
+}
+
+.add-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: forestgreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.remove-button {
+    padding: 5px 10px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: darkred;
+}
+
+.add-btn:hover {
+    background-color: darkgreen;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 20px;
+    }
+
+    .list-element {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .input-box {
+        width: 100%;
+        max-width: none;
+    }
+
+    .add-btn {
+        width: 100%;
+    }
+
+    #add-items-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #date-container {
+        font-size: 16px;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .list-element {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .input-box {
+        padding: 8px;
+    }
+
+    .add-btn {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .remove-button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
